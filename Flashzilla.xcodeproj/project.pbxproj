@@ -12,6 +12,8 @@
 		7BA35AAA2783DED500349148 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BA35AA92783DED500349148 /* Assets.xcassets */; };
 		7BA35AAD2783DED500349148 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BA35AAC2783DED500349148 /* Preview Assets.xcassets */; };
 		7BC3412C278BC000004C4BB8 /* GestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC3412B278BC000004C4BB8 /* GestureView.swift */; };
+		7BC3412E278BD2AB004C4BB8 /* VibrationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC3412D278BD2AB004C4BB8 /* VibrationsView.swift */; };
+		7BC34130278BD8DC004C4BB8 /* DisableInteractionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC3412F278BD8DC004C4BB8 /* DisableInteractionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,8 @@
 		7BA35AA92783DED500349148 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7BA35AAC2783DED500349148 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7BC3412B278BC000004C4BB8 /* GestureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureView.swift; sourceTree = "<group>"; };
+		7BC3412D278BD2AB004C4BB8 /* VibrationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VibrationsView.swift; sourceTree = "<group>"; };
+		7BC3412F278BD8DC004C4BB8 /* DisableInteractionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisableInteractionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,8 @@
 			isa = PBXGroup;
 			children = (
 				7BC3412B278BC000004C4BB8 /* GestureView.swift */,
+				7BC3412D278BD2AB004C4BB8 /* VibrationsView.swift */,
+				7BC3412F278BD8DC004C4BB8 /* DisableInteractionView.swift */,
 			);
 			path = Lecons;
 			sourceTree = "<group>";
@@ -156,9 +162,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BC34130278BD8DC004C4BB8 /* DisableInteractionView.swift in Sources */,
 				7BA35AA82783DED300349148 /* ContentView.swift in Sources */,
 				7BA35AA62783DED300349148 /* FlashzillaApp.swift in Sources */,
 				7BC3412C278BC000004C4BB8 /* GestureView.swift in Sources */,
+				7BC3412E278BD2AB004C4BB8 /* VibrationsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
