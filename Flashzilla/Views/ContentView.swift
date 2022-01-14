@@ -18,7 +18,7 @@ struct ContentView: View {
     @Environment(\.accessibilityDifferentiateWithoutColor) var differentiateWithoutColor
     @Environment(\.accessibilityVoiceOverEnabled) var voiceOverEnabled
 
-    @State private var cards = Array(repeating: Card.example, count: 10)
+    @State private var cards = [Card]()
     
     @State private var timeRemaining = 100
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
@@ -72,6 +72,7 @@ struct ContentView: View {
                     
                     Button {
                         showingEditScreen = true
+                        
                     } label: {
                         Image(systemName: "plus.circle")
                             .padding()
@@ -141,6 +142,16 @@ struct ContentView: View {
                 isActive = false
             }
         }
+        .sheet(isPresented: $showingEditScreen, onDismiss: resetCards, content: EditCards.init)
+        .onAppear(perform: resetCards)
+    }
+    
+    func loadData() {
+        if let data = UserDefaults.standard.data(forKey: "Cards") {
+            if let decoded = try? JSONDecoder().decode([Card].self, from: data) {
+                cards = decoded
+            }
+        }
     }
     
     func removeCard(at index: Int) {
@@ -153,9 +164,9 @@ struct ContentView: View {
     }
     
     func resetCards() {
-        cards = Array(repeating: Card.example, count: 10)
         timeRemaining = 100
         isActive = true
+        loadData()
     }
 }
 
