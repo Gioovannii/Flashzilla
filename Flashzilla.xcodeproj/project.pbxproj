@@ -11,6 +11,7 @@
 		7BA35AA82783DED300349148 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA35AA72783DED300349148 /* ContentView.swift */; };
 		7BA35AAA2783DED500349148 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BA35AA92783DED500349148 /* Assets.xcassets */; };
 		7BA35AAD2783DED500349148 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BA35AAC2783DED500349148 /* Preview Assets.xcassets */; };
+		7BB435BD279159AD00BE5CC7 /* EditCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB435BC279159AD00BE5CC7 /* EditCards.swift */; };
 		7BBA809F278D193700406358 /* TriggerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBA809E278D193700406358 /* TriggerView.swift */; };
 		7BBA80A1278D20E600406358 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBA80A0278D20E600406358 /* BackgroundView.swift */; };
 		7BBA80A3278D2ECF00406358 /* AccessibityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBA80A2278D2ECF00406358 /* AccessibityView.swift */; };
@@ -27,6 +28,7 @@
 		7BA35AA72783DED300349148 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7BA35AA92783DED500349148 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7BA35AAC2783DED500349148 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7BB435BC279159AD00BE5CC7 /* EditCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCards.swift; sourceTree = "<group>"; };
 		7BBA809E278D193700406358 /* TriggerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriggerView.swift; sourceTree = "<group>"; };
 		7BBA80A0278D20E600406358 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 		7BBA80A2278D2ECF00406358 /* AccessibityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibityView.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				7BA35AA72783DED300349148 /* ContentView.swift */,
 				7BC47E79278E7B34006CA601 /* Card.swift */,
 				7BC47E7B278E7C2E006CA601 /* CardView.swift */,
+				7BB435BC279159AD00BE5CC7 /* EditCards.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 				7BC47E7A278E7B34006CA601 /* Card.swift in Sources */,
 				7BBA809F278D193700406358 /* TriggerView.swift in Sources */,
 				7BA35AA82783DED300349148 /* ContentView.swift in Sources */,
+				7BB435BD279159AD00BE5CC7 /* EditCards.swift in Sources */,
 				7BC47E7C278E7C2E006CA601 /* CardView.swift in Sources */,
 				7BBA80A1278D20E600406358 /* BackgroundView.swift in Sources */,
 				7BA35AA62783DED300349148 /* FlashzillaApp.swift in Sources */,
