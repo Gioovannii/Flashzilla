@@ -11,6 +11,7 @@ struct CardView: View {
     let card: Card
     var removal: (() -> Void)? = nil
     
+    @State private var feedback = UINotificationFeedbackGenerator()
     
     @Environment(\.accessibilityDifferentiateWithoutColor) var differentiateWithoutColor
     @State private var isShowingAnswer = false
@@ -24,7 +25,7 @@ struct CardView: View {
                         .opacity(1 - Double(abs(offset.width / 50)))
                 )
                 .background(differentiateWithoutColor ? nil :
-                    RoundedRectangle(cornerRadius: 25, style: .continuous)
+                                RoundedRectangle(cornerRadius: 25, style: .continuous)
                                 .fill(offset.width > 0 ? .green : .red))
                 .shadow(radius: 10)
             
@@ -51,9 +52,15 @@ struct CardView: View {
             DragGesture()
                 .onChanged { gesture in
                     offset = gesture.translation
+                    feedback.prepare()
                 }
                 .onEnded { _ in
                     if abs(offset.width) > 100 {
+                        if offset.width < 0 {
+//                            feedback.notificationOccurred(.success)
+//                        } else {
+                            feedback.notificationOccurred(.error)
+                        }
                         removal?()
                     } else {
                         offset = .zero
